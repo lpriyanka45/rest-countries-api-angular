@@ -1,0 +1,9 @@
+<div class="filteroptions shadow">
+    <div class="filter" (click)="toggleOptions()">
+      <p>Filter By Region</p>
+      <span class="fa fa-chevron-down"></span>
+    </div>
+    <ul *ngIf="showOptions" class="options shadow">
+      <li *ngFor="let value of values" (click)="select(value)">{{ value }}</li>
+    </ul>
+  </div>

@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    --bgColor:hsl(0, 0%, 98%);
+    --fontcolor:hsl(200, 15%, 8%);
+    font-family:"Nunito Sans",sans-serif;
+    width:100%;
+}
+/*a,
+a:active,
+a:hover{
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+}*/
+.shadow {
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+  }

@@ -1,0 +1,14 @@
+<div class="country-filters">
+    <div class="searchbar shadow">
+        <b class="fas fa-search"></b>
+        <input type="text" placeholder="Search for a country..." [(ngModel)]="searchFilter"
+        class="search"/>
+    </div>
+    <app-dropdown
+        [values]="regionOptions"
+        [(value)]="regionFilter">
+    </app-dropdown>
+</div>
+<div class="cards">
+    <app-country-card *ngFor="let country of countries" [country]="country"></app-country-card>
+</div>

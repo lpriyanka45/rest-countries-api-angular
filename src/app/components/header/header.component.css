@@ -1,0 +1,19 @@
+nav {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    padding-left: 3rem;
+}
+
+:host-context(.light) nav{
+    background-color: hsl(0, 0%, 100%);
+}
+
+:host-context(.dark) nav {
+    background-color: hsl(209, 23%, 22%);
+}

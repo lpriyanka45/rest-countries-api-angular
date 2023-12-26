@@ -1,0 +1,68 @@
+.cards{
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    padding:30px;
+    display:grid;
+    grid-gap:45px;
+}
+.country-filters{
+    margin:2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.25rem;
+}
+/*.searchbar{
+    width:450px;
+    box-shadow:0 0 5px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+    height:50px;
+}
+.searchbar input{
+    width:100%;
+    border:0;
+    padding: 15px 55px;
+    font-size: 15px;
+    outline:0;
+}
+.searchbar b{
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    position: absolute;
+}*/
+.searchbar {
+    border-radius: 0.25rem;
+    /*box-shadow:0 0 5px rgba(0,0,0,0.3);
+    */font-size: 1rem;
+    padding: 1rem;
+    width: 33%;
+}
+.searchbar b {
+      font-size: 1rem;
+      padding-right: 0.5rem;
+    }
+.searchbar input {
+      font-size: 1rem;
+      border: none;
+      background-color: inherit;
+    }
+
+:host-context(.light) {
+    .searchbar {
+      background-color: hsl(0, 0%, 100%);
+      color: hsl(0, 0%, 52%);
+      input::placeholder {
+        color: hsl(0, 0%, 52%);
+      }
+    }
+  }
+  
+  :host-context(.dark) {
+    .searchbar {
+      background-color:  hsl(209, 23%, 22%);
+      color: hsl(0, 0%, 100%);
+      input::placeholder {
+        color: hsl(0, 0%, 100%);
+      }
+    }
+  }
